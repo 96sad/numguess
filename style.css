@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruluko&family=Tilt+Neon&family=Unna&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Tilt Neon", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+nav
+{
+    height: 80px;
+    background-color:bisque;
+    width: 100%;
+}
+.span
+{
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 20px;
+}
+nav ul
+{
+    float: right;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+nav ul li
+{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+nav ul li a
+{
+    color: #000;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+a.active,a:hover
+{
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+.container
+{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.box
+{
+   width: 400px;
+   height: 400px;
+   background-color: bisque;
+   border-radius: 10px;
+   display:inline-flex;
+   align-items: center;
+   justify-content:space-evenly;
+   padding: 20px;
+   flex-direction: column;
+}
+label
+{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+input
+{
+    width: 100%;
+    padding: 10px;
+    border: 2px dashed #000;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 50px;
+}
+button
+{
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform:uppercase;
+}
+button:hover
+{
+    background-color: burlywood;
+}
+p
+{
+    color: #000;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+.footer {
+    background-color:bisque;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+}

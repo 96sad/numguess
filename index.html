@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <span class="span">Number <span style="color:red ;">Guessing</span> Game</span>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align: center; color: black; margin:30px;">Welcome To Guessing Game</h1>
+    <div class="container">
+        <div class="box">
+            <form id="guessForm">
+                <label for="guess">Enter A Number Between 1 And 100</label>
+                <input type="number" id="guess" name="guess" placeholder="Enter A Number" required><br><br>
+                <button type="submit">Submit</button>
+                <p id="message"></p>
+            </form>
+
+        </div>
+    </div>
+
+        <footer class="footer">
+            <p>Copyright &copy; 2024 Number Guessing Game</p>
+        </footer>
+
+    <script>
+         let randomNumber = Math.floor(Math.random ("submit")*100)+1;
+         console.log(randomNumber);
+         let guessForm = document.querySelector("#guessForm");
+         let message = document.querySelector("#message");
+         guessForm.addEventListener("submit",function(e)
+         {
+            event.preventDefault();
+            let userGuess = parseInt(document.querySelector("#guess").value);
+            if (userGuess === randomNumber)
+            {
+                message.classList.add("correct");
+                message.innerText = `Congrats You Won The Game`;
+            }
+            else
+            {
+                message.classList.add ("wrong");
+                message.innerText = `Sorry,Number was ${randomNumber}.Try again`;
+            }
+         })
+    </script>
+
+
+</body>
+
+</html>
